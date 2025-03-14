@@ -35,33 +35,49 @@ export default function SobreNosPage() {
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
           <h2 className="text-4xl font-bold text-center mb-16 text-gray-900">Nossa História</h2>
-          <div className="grid md:grid-cols-3 gap-8">
-            <div className="space-y-4">
-              <div className="w-16 h-16 bg-blue-100 rounded-xl flex items-center justify-center mb-6">
-                <span className="text-3xl text-blue-600">1</span>
+          <div className="relative">
+            {/* Linha do tempo */}
+            <div className="absolute left-[50%] top-0 bottom-0 w-1 bg-blue-200 hidden md:block" />
+            
+            <div className="grid md:grid-cols-3 gap-8 relative">
+              {/* Item 1 */}
+              <div className="relative">
+                <div className="bg-white p-6 rounded-xl border border-blue-100 shadow-lg hover:shadow-xl transition-all">
+                  <div className="w-16 h-16 bg-blue-100 rounded-xl flex items-center justify-center mb-6">
+                    <span className="text-3xl text-blue-600">1</span>
+                  </div>
+                  <h3 className="text-2xl font-bold text-gray-800">Fundação</h3>
+                  <p className="text-gray-600 mt-4">
+                    Iniciamos nossa jornada em 2013 com o objetivo de democratizar o acesso ao ensino de qualidade.
+                  </p>
+                </div>
               </div>
-              <h3 className="text-2xl font-bold text-gray-800">Fundação</h3>
-              <p className="text-gray-600">
-                Iniciamos nossa jornada em 2013 com o objetivo de democratizar o acesso ao ensino de qualidade.
-              </p>
-            </div>
-            <div className="space-y-4">
-              <div className="w-16 h-16 bg-blue-100 rounded-xl flex items-center justify-center mb-6">
-                <span className="text-3xl text-blue-600">2</span>
+
+              {/* Item 2 */}
+              <div className="relative">
+                <div className="bg-white p-6 rounded-xl border border-blue-100 shadow-lg hover:shadow-xl transition-all">
+                  <div className="w-16 h-16 bg-blue-100 rounded-xl flex items-center justify-center mb-6">
+                    <span className="text-3xl text-blue-600">2</span>
+                  </div>
+                  <h3 className="text-2xl font-bold text-gray-800">Crescimento</h3>
+                  <p className="text-gray-600 mt-4">
+                    Expandimos nossa atuação para todo o Brasil através da nossa plataforma online.
+                  </p>
+                </div>
               </div>
-              <h3 className="text-2xl font-bold text-gray-800">Crescimento</h3>
-              <p className="text-gray-600">
-                Expandimos nossa atuação para todo o Brasil através da nossa plataforma online.
-              </p>
-            </div>
-            <div className="space-y-4">
-              <div className="w-16 h-16 bg-blue-100 rounded-xl flex items-center justify-center mb-6">
-                <span className="text-3xl text-blue-600">3</span>
+
+              {/* Item 3 */}
+              <div className="relative">
+                <div className="bg-white p-6 rounded-xl border border-blue-100 shadow-lg hover:shadow-xl transition-all">
+                  <div className="w-16 h-16 bg-blue-100 rounded-xl flex items-center justify-center mb-6">
+                    <span className="text-3xl text-blue-600">3</span>
+                  </div>
+                  <h3 className="text-2xl font-bold text-gray-800">Consolidação</h3>
+                  <p className="text-gray-600 mt-4">
+                    Mais de 10.000 alunos aprovados e uma metodologia reconhecida nacionalmente.
+                  </p>
+                </div>
               </div>
-              <h3 className="text-2xl font-bold text-gray-800">Hoje</h3>
-              <p className="text-gray-600">
-                Mais de 10.000 alunos aprovados e uma metodologia reconhecida nacionalmente.
-              </p>
             </div>
           </div>
         </div>
