@@ -35,7 +35,7 @@ export default function Home() {
               alt="Adquira uma pós graduação e ganhe outra"
               width={1800}
               height={600}
-              className="w-full rounded-2xl shadow-xl"
+              className="w-full rounded-2xl shadow-xl mt-5"
               priority
             />
             <div className="absolute inset-0 rounded-2xl bg-gradient-to-r from-gray-900/10 to-transparent" />
