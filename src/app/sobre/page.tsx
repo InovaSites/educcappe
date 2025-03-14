@@ -19,7 +19,7 @@ export default function SobreNosPage() {
             <div className="flex-1">
               <div className="relative aspect-video rounded-2xl overflow-hidden shadow-2xl">
                 <Image
-                  src="/images/sobre-hero.jpg"
+                  src="https://images.unsplash.com/photo-1523240795612-9a054b0db644"
                   alt="Alunos estudando"
                   fill
                   className="object-cover"
