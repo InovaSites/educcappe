@@ -8,13 +8,24 @@ export default function SobreNosPage() {
       <section className="pt-32 pb-20">
         <div className="container mx-auto px-4">
           <div className="flex flex-col lg:flex-row items-center gap-12">
-            <div className="flex-1 space-y-6">
-              <h1 className="text-5xl font-bold text-gray-900">
+            <div className="flex-1 space-y-6 text-center lg:text-left">
+              <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 leading-tight">
                 Transformando sonhos em conquistas
               </h1>
-              <p className="text-xl text-gray-600">
+              <p className="text-base sm:text-lg lg:text-xl text-gray-600 max-w-2xl mx-auto lg:mx-0">
                 Há mais de 10 anos, a Educcappe tem se dedicado a preparar alunos para alcançarem seus objetivos através de uma metodologia única e eficaz.
               </p>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                <Link 
+                  href="/cursos"
+                  className="bg-blue-600 text-white px-6 py-3 rounded-xl text-lg font-semibold hover:bg-blue-700 transition-all inline-flex items-center justify-center gap-2"
+                >
+                  Conheça nossos cursos
+                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6"/>
+                  </svg>
+                </Link>
+              </div>
             </div>
             <div className="flex-1">
               <div className="relative aspect-video rounded-2xl overflow-hidden shadow-2xl">
