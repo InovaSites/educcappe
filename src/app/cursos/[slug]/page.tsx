@@ -3,8 +3,22 @@ import { COURSES_DETAILS } from "@/data/courses";
 import Image from "next/image";
 import Link from "next/link";
 
-export default function CourseDetails({ params }: { params: { slug: string } }) {
-  const course = COURSES_DETAILS[params.slug as keyof typeof COURSES_DETAILS];
+interface PageProps {
+  params: Promise<{
+    slug: string;
+  }>;
+  searchParams: Promise<{ [key: string]: string | string[] | undefined }>;
+}
+
+export default async function CourseDetails({ 
+  params,
+  searchParams 
+}: PageProps) {
+  // Aguarda a resolução dos parâmetros
+  const resolvedParams = await params;
+  const resolvedSearchParams = await searchParams;
+  
+  const course = COURSES_DETAILS[resolvedParams.slug as keyof typeof COURSES_DETAILS];
   
   if (!course) {
     notFound();
